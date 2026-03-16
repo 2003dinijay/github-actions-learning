@@ -33,4 +33,7 @@ jobs:
       
       - name: Print success message
         run: echo "✅ Workflow completed successfully!"
-# I triggered this workflow by pushing! - dinijay
+# I triggered this workflow by pushing! - dinijay      - name: Access secret
+        run: echo "Secret exists and has length: ${#MY_SECRET}"
+        env:
+          MY_SECRET: ${{ secrets.TEST_SECRET }}
