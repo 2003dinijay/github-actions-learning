@@ -49,6 +49,14 @@ jobs:
       - name: Build application
         working-directory: ./sample-app
         run: npm run build
+      - name: Create artifact file
+        run: echo "Build completed at $(date)" > output.txt
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-${{ matrix.node-version }}
+          path: output.txt
       
       - name: Run tests
         working-directory: ./sample-app
