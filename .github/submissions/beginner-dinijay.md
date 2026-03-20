@@ -14,17 +14,14 @@
 
 ### Task 1: Hello World Workflow
 - Ran Hello World Workflow manually via workflow_dispatch
-- Workflow succeeded in 6s
+- Workflow succeeded in 6s ✅
 
 ### Task 2: Push Trigger
 - Edited hello-world.yml and pushed to main
-- Workflow triggered automatically on push
+- Workflow triggered automatically on push ✅
 
 ### Task 3: Local Tests
-- All 8 tests passed with npm test
-
-## Notes
-Completed all beginner tasks successfully!
+- All 8 tests passed with npm test ✅
 
 ---
 Submitted & ready for review! ✅
